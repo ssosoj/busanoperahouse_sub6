@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=1400">
+
+  <link rel="stylesheet" href="index.css">
+
+
+  <title>기관소개</title>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="script/taps.js"></script>
+  <script src="script/menu_top_fixed.js"></script>
+  <script src="script/search.js"></script>
+</head>
+
+<body>
+
+  <!-- 메뉴 -->
+  <div id="gnb">
+    <div class="gnb_inner">
+      <ul class="left gnb1">
+        <li><a href="#">공연안내</a></li>
+        <li><a href="#">티켓예매</a></li>
+        <li><a href="#">아카데미</a></li>
+        <li><a href="#">고객센터</a></li>
+      </ul>
+
+      <ul class="right gnb2">
+        <li><a href="#">기관소개</a></li>
+        <li><a href="#">알림마당</a></li>
+
+        <li><a href="#" id="small">MD샵</a></li>
+        <li><a href="#" id="small">로그인</a></li>
+
+        <li><a href="#"><img src="images/sub_calendar.png" alt="달력"></a></li>
+        <li>
+          <div class="search-wrapper">
+            <div class="input-holder">
+                <input type="text" class="search-input" placeholder="검색" />
+                 <button class="search-icon" onclick="searchToggle(this, event);">
+                  <span><img src="images/sub_search.png" alt=""></span>
+                </button>
+            </div>
+            <span class="close" onclick="searchToggle(this, event);"></span>
+          </div>
+        </li>
+
+      </ul>
+
+      <a href="#"><img src="images/sub_logo.png" alt="로고" id="sub_logo"></a>
+
+    </div>
+  </div>
+
+  <!-- 상단고정 메뉴 -->
+  <div class="gnb_top">
+    <div class="gnb_top_inner">
+      <ul class="left gnb1_top">
+        <li><a href="#">공연안내</a></li>
+        <li><a href="#">티켓예매</a></li>
+        <li><a href="#">아카데미</a></li>
+        <li><a href="#">고객센터</a></li>
+      </ul>
+
+      <ul class="right gnb2_top">
+        <li><a href="#">기관소개</a></li>
+        <li><a href="#">알림마당</a></li>
+
+        <li><a href="#" id="small_top">MD샵</a></li>
+        <li><a href="#" id="small_top">로그인</a></li>
+
+        <li><a href="#"><img src="images/sub_calendar_w.png" alt="달력"></a></li>
+        <li>
+          <div class="search-wrapper_top">
+            <div class="input-holder_top">
+                <input type="text" class="search-input_top" placeholder="검색" />
+                 <button class="search-icon_top" onclick="searchToggle_top(this, event);">
+                  <span><img src="images/sub_search_w.png" alt=""></span>
+                </button>
+            </div>
+            <span class="close_top" onclick="searchToggle_top(this, event);"></span>
+          </div>
+        </li>
+      </ul>
+
+      <a href="#"><img src="images/fix_logo.png" alt="로고" id="logo_top"></a>
+    </div>
+  </div>
+
+
+<!-- 배너 -->
+  <div id="banner">
+    <h1>기관소개</h1>
+  </div>
+
+<!-- 작은메뉴 -->
+  <div id="nav">
+    <div class="nav_inner">
+      <ul>
+        <li><a href="#"><img src="images/sub_home.png" alt="홈"></a></li>
+        <li>
+          <h2>기관소개</h2>
+          <img src="images/sub_right.png" alt="화살표" class="right">
+        </li>
+        <li>
+          <h2>소개</h2>
+          <img src="images/sub_right.png" alt="화살표" class="right">
+        </li>
+      </ul>
+    </div>
+  </div>
+
+<!-- 내용 -->
+  <div id="box">
+    <h1>부산 오페라하우스 소개</h1>
+
+    <!-- 탭 -->
+    <ul class="tabs">
+      <li class="on"><a href="#none">인사말</a> </li>
+      <li><a href="#none">기관연혁</a></li>
+      <li><a href="#none">운영이념</a></li>
+      <li><a href="#none">주요사업</a></li>
+      <li><a href="#none">CI소개</a></li>
+    </ul>
+
+    <!-- 탭1 내용 -->
+    <div class="tab_con on" id="tab_con1">
+      <h1>
+        <span>부산 오페라하우스</span>는<br>
+        부산광역시가 설립한 기관으로 부산의 대표적인 <span>문화예술기관</span>입니다.
+      </h1>
+      <h2>
+        2023년 준공으로 탄생하여, 부산시민들의 공연예술에 대한 관심을 키우고 <br>
+        세계 각지의 문화예술의 허브역할을 하겠습니다.
+      </h2>
+
+      <img src="images/five_1.jpg" alt="건물">
+
+      <p>
+        부산 오페라하우스는 부산 문화예술의 허브의 역할을 하겠습니다. <br>
+        그리고 대한민국 오페라의 중심으로 성장할 것입니다. <br>
+        오페라와 다른 다양한 장르의 제작과 공연을 활발히 할 것이고, <br>
+        이를 콘텐츠로 한 예술교육을 실시할 것입니다.<br>
+        <br>
+        부산 오페라하우스의 발전은 부산 시민들뿐만 아니라,<br>
+        문화예술을 사랑하는 모든 시민들로부터 비롯됨을 알리고 싶습니다. <br>
+        부산 오페라하우스를 찾아주시는 분들에게 감사를 표합니다. <br>
+        보다 신선하고 함께 즐길 수 있는 공연들로, <br>
+        언제나 찾아주실 수 있는 문화예술의 랜드마크로 보답하겠습니다.
+      </p>
+    </div>
+
+    <!-- 탭2 내용 -->
+    <div class="tab_con" id="tab_con2">
+      <div class="left">
+        <h1><span>2022 ~ 현재 &nbsp;</span></h1>
+      </div>
+
+      <div class="right">
+        <ul>
+          <li>
+            <p><span>2022.12.12</span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 부산오페라하우스 개관</p>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- 탭3 내용 -->
+    <div class="tab_con" id="tab_con3">
+      <h1>
+        <span>핵심가치</span>는 부산 오페라하우가 일하는 방식이자<br>
+        무엇보다 <span>우선되어야 할 가치</span>를 의미합니다.
+      </h1>
+
+      <ul>
+        <li>
+          <h2>Creativity</h2>
+          <h3>창의성</h3>
+          <p>자유롭게 <br>
+            도전하겠습니다.</p>
+        </li>
+        <li>
+          <h2>Openness</h2>
+          <h3>개방성</h3>
+          <p>장르에 대한 편견 없이 <br>
+            받아들입니다.</p>
+        </li>
+        <li>
+          <h2>Expertise</h2>
+          <h3>전문성</h3>
+          <p>역사와 연구를 통해 얻은<br>
+            경험과 함께합니다.</p>
+        </li>
+      </ul>
+
+      <h1>
+        문화예술의 새로운 트렌드이자 부산의 랜드마크,<br>
+        바다부터 도심까지 주변환경을 연계하는 <span>
+          소통의 공간</span>으로 변화 할 것입니다.
+      </h1>
+    </div>
+
+    <!-- 탭4 내용 -->
+    <div class="tab_con" id="tab_con4">
+      <h1>기획공연</h1>
+      <ul>
+        <li><img src="images/five_4-1.jpg" alt="기획공연"></li>
+        <li>
+          <h2>다양한 장르의 향연</h2>
+          <p>
+            부산오페라하우스는 전문적이고 높은 음악적 수준과 대중성을 갖춘 작품들을<br>
+            기획하여 공연하겠습니다. 오페라, 뮤지컬, 오케스트라, 발레 등 장르를 불문하고 <br>
+            <span>누구나 부담없이 즐길 수 있는 공연</span>을 위하여 노력하겠습니다.
+          </p>
+        </li>
+      </ul>
+
+      <h1>부산국제오페라축제</h1>
+      <ul>
+        <li><img src="images/five_4-2.jpg" alt="기획공연"></li>
+        <li>
+          <h2>전세계인의 화합</h2>
+          <p>
+            대한민국 시민과 전세계인이 함께 할 수 있는 축제를 열겠습니다. <br>
+            언어가 통하지 않아도, 모습이 달라도, 차별 받지 않고<br>
+            <span>누구나 즐길 수 있는 흥겨운 축제</span>를 선사하겠습니다.
+          </p>
+        </li>
+      </ul>
+
+      <h1>아카데미</h1>
+      <ul>
+        <li><img src="images/five_4-3.jpg" alt="기획공연"></li>
+        <li>
+          <h2>문화예술을 사랑하는 시민들을 위한</h2>
+          <p>
+            전공생이 아니 접근하기 힘든 전문적인 노래, 악기 연주, 퍼포먼스를 <br>
+            <span>누구나 배울 수 있습니다.</span> 기초부터 상세히, 초보자도 이해하기 쉽게, <br>
+            차근차근 알 수 있게 구성될 것입니다.
+          </p>
+        </li>
+      </ul>
+    </div>
+
+  <!-- 탭5 내용 -->
+    <div class="tab_con" id="tab_con5">
+      <h1>메인로고</h1>
+      <ul>
+        <li>
+          <img src="images/five_5-1.png" alt="메인로고">
+        </li>
+        <li>
+          <p>
+            <span>한글의 자음과 부산을 상징하는 색</span>으로 구성되어 있습니다. <br>
+            부산 문화를 상징하는 랜드마크가 되겠다는 의지를 드러냅니다.<br>
+            중간이 채워져있지 않은 이유는 부산 오페라하우스는 막혀있지 않고<br>
+            <span>누구나 자유롭고 친근하게 드나들 수 있다는 의미</span>입니다.
+          </p>
+        </li>
+      </ul>
+
+      <h6>로고 다운로드</h6>
+      <a href="images/five_5-1.png" download><img src="images/five_down.png" alt="다운로드"></a>
+
+      <h1>서브로고</h1>
+      <ul>
+        <li>
+          <img src="images/five_5-2.png" alt="서브로고">
+        </li>
+        <li>
+          <p>
+            메인로고를 건물의 형상으로 재구성하였습니다.<br>
+            오페라 하우스의 곁에 넓은 바다가 있다는 느낌을 표현하였습니다.
+          </p>
+        </li>
+      </ul>
+
+      <h6>로고 다운로드</h6>
+      <a href="images/five_5-2.png" download><img src="images/five_down.png" alt="다운로드"></a>
+
+      <h1>색상</h1>
+      <ul>
+        <li>
+            <img src="images/five_5-3.jpg" alt="색상">
+            <h5>
+               R0 G91 B170 <br>
+               C100 M70 Y0 K0<br>
+               #005BAA<br>
+              <br>
+              R243 G112 B33<br>
+              C0 M70 Y100 K0<br>
+              #F37021
+            </h5>            
+        </li>
+        <li>
+          <p>
+            푸른바다가 어우러진 해양도시와 미래도시 부산을 상징합니다.<br>
+            <br>
+            <br>
+            <br>
+            부산 시민의 미래에 대한 꿈과 희망을 상징합니다.
+          </p>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  
+<!-- 푸터 -->
+  <div class="footer clear">
+    <div class="footer_inner">
+      <p class="f_1 opa50">
+        <a href="#none">개인정보처리방침</a>
+        <a href="#none">이메일무단수집거부</a>
+        <a href="#none">고객서비스현장</a>
+        <a href="#none">오시는길</a>
+        <a href="#none">원격지원</a>
+      </p>
+    </div>
+    <hr>
+    <div class="footer_inner">
+      <img src="images/footer_logo.png" alt="로고" class="f_logo left">
+      <p class="f_2 opa50">
+        재단법인 부산오페라하우스 부산광역시 중구 북항 (우)00000 <br>
+        대표자 : 홍길동 사업자등록번호 : 000-00-00000 <br>
+        통신판매업신고 : 부산중구-0000호
+      </p>
+      
+      <p class="f_3">
+        <a href="https://www.busanpa.com/kor/Main.do" target="_blank"><img src="images/footer-bpa.jpg" alt="부산항만공사"></a>
+        <a href="https://www.busan.go.kr/index" target="_blank"><img src="images/footer-busan.png" alt="부산광역시"></a>
+        <br>
+        전화예매 및 문의 : 051-000-0000
+      </p>
+  
+      <p class="clear opa50">COPYRIGHT(C) BUSAN OPERA HOUSE. ALL RIGHTS RESERVED</p>
+    </div>
+  </div>
+</body>
+
+</html>
